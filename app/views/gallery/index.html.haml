@@ -1,0 +1,9 @@
+%h1
+  Gallery
+
+%pre
+  - @results.each do |result|
+    = image_tag "data:image/jpeg;base64,#{result.thumbnail}"
+
+%pre
+  = @more
